@@ -146,4 +146,4 @@ rdd = sc.parallelize(big_list, 5)
 odds = rdd.filter(lambda x: x % 2 != 0)
 odds.take(20)
 EOF
-bash -c 
+python3 configure_spark.py
