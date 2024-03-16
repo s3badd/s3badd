@@ -119,15 +119,15 @@ sudo microk8s.kubectl expose pod jupyter --type=ClusterIP --name=jupyter --port=
 
 echo > configure_spark.py <<EOF
 import os
-os.environ["SPARK_HOME"] = "/spark-3.1.2-bin-hadoop3.2"
+os.environ["SPARK_HOME"] = "/spark-3.5.1-bin-hadoop3"
 
 import pyspark
 import findspark
 from pyspark import SparkContext, SparkConf
 findspark.init()
 
-conf = SparkConf().setAppName('spark-on-uk8s-on-core-20').setMaster('k8s://https://kubernetes.default.svc')
-conf.set("spark.kubernetes.container.image", "localhost:32000/spark-on-uk8s-on-core-20:1.0")
+conf = SparkConf().setAppName('spark-on-uk8s-on-core-23').setMaster('k8s://https://0.0.0.0.default.svc')
+conf.set("spark.kubernetes.container.image", "localhost:32000/spark-on-uk8s-on-core-23:1.0")
 conf.set("spark.kubernetes.allocation.batch.size", "50")
 conf.set("spark.io.encryption.enabled", "true")
 conf.set("spark.authenticate", "true")
