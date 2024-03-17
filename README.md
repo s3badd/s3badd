@@ -1,7 +1,7 @@
 - 👋 Hi, I’m S3b
 - 🌱 I’m currently learning alot
 - 💞️ I’m will collaborate somehow
-- 📫 How to reach me you know that allready
+- 📫 How to reach me you know that already
 - 😄 Pronouns: Sebass
 - ⚡ Fun fact: Romeo That
 
